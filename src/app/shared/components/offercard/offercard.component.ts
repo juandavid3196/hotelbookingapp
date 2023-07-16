@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-offercard',
@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class OffercardComponent {
 
+  @Input() score !: string ;
+  @Input() url !: string ;
+  @Input() hotelName !: string ;
+  @Input() location !: string ;
+  @Input() price !: string ;
 }

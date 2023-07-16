@@ -69,8 +69,14 @@
         </section>
         <section class="offer-section">
             <h6 class="section-subtitle">Hotels loved by guest</h6>
-            <div class="cards-conainer">
-                <app-offercard></app-offercard>
+            <div class="cards-container">
+                <app-offercard *ngFor="let hotel of hotels"
+                    [score]="hotel.score"
+                    [url]="hotel.url"
+                    [hotelName]="hotel.hotelName"
+                    [location]="hotel.location"
+                    [price]="hotel.price"
+                ></app-offercard>
             </div>
         </section>
         <section class="add-section"></section>

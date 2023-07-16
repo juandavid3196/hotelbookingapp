@@ -171,6 +171,12 @@
         }
         .offer-section {
             margin-top: 80px;
+
+            .cards-container {
+                margin-top: 20px;
+                display: flex;
+                justify-content: space-between;
+            }
         }
     }
 }
