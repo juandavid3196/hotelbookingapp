@@ -2,7 +2,7 @@
     <div class="left">
         <div class="name-container">
             <h3 class="web-name">Tripster</h3>
-            <img src="https://static.vecteezy.com/system/resources/previews/003/820/680/non_2x/colombia-flag-nation-free-vector.jpg" class="co-flag" alt="">
+            <img src="../../../../assets/gallery/icons/colombia-flag.jpg" class="co-flag" alt="">
         </div>
         <div class="main-menu">
             <ul>
@@ -14,6 +14,8 @@
     </div>
     <div class="right">
         <button class="singup-btn">Sing up</button>
-        <button class="login-btn">Log in</button>
+        <button class="login-btn" (click)="openLogin()">Log in</button>
     </div>
 </div>
+<app-login *ngIf="openLoginMenu"  (closeModal)="onCloseModal()"/>
+

@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class NavComponent {
 
+  openLoginMenu : boolean = false;
+
+  openLogin() : void {
+    this.openLoginMenu = true;
+  }
+
+  onCloseModal(): void {
+    this.openLoginMenu = false;
+  }
 }

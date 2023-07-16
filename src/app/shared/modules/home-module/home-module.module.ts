@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { NavComponent } from '../../components/nav/nav.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { OffercardComponent } from '../../components/offercard/offercard.component';
+import { LoginComponent } from '../../components/login/login.component';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { OffercardComponent } from '../../components/offercard/offercard.compone
     HomeComponent,
     NavComponent,
     FooterComponent,
-    OffercardComponent
+    OffercardComponent,
+    LoginComponent,
     
   ],
   imports: [
