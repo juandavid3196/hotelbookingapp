@@ -6,10 +6,20 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
+  value : string = "show";
+
+  formContainer :  boolean = true;
   @Output() closeModal = new EventEmitter<void>();
 
-
   closeLogin() : void {
-    this.closeModal.emit(); 
+    this.value= "hide";
+    setTimeout(()=> {
+      this.closeModal.emit(); 
+    },3000)
   }
+
+  changeWindow(){
+    this.formContainer = !this.formContainer;
+  }
+
 }

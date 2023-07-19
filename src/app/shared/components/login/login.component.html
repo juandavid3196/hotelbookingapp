@@ -1,4 +1,4 @@
-<div class="login-content" (click)="closeLogin()">
+<div  class="login-content {{value}}" (click)="closeLogin()">
     <div class="login-container" (click)="$event.stopPropagation()">
         <div class="left">
             <div class="login-title">Get exclusive access to <span>Tripster</span></div>
@@ -6,26 +6,57 @@
             </div>
         </div>
         <div class="right">
-            <div class="links-section">
-                <span>Don't have an account?</span>
-                <button>Create Profile</button>
-            </div>
-            <div class="form-section">
-                <form action="">
-                    <div class="form-box">
-                        <input type="text" placeholder="Email">
-                        <i class="fa-regular fa-envelope"></i>
-                    </div>
-                    <div class="form-box">
-                        <input type="text" placeholder="Password">
-                        <i class="fa-solid fa-key"></i>
-                    </div>
-                    <div class="form-box-btn">
-                        <button>Login</button>
-                        <span>Forgot password?</span>
-                    </div>
-                </form>
-            </div>
+            <ng-container *ngIf="formContainer; else showregisterform">
+                <div class="links-section">
+                    <span>Don't have an account?</span>
+                    <button (click)="changeWindow()">Create Profile</button>
+                </div>
+                <div class="form-section">
+                    <form action="">
+                        <div class="form-box">
+                            <input type="text" placeholder="Email">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="form-box">
+                            <input type="text" placeholder="Password">
+                            <i class="fa-solid fa-key"></i>
+                        </div>
+                        <div class="form-box-btn">
+                            <button>Log in</button>
+                            <span>Forgot password?</span>
+                        </div>
+                    </form>
+                </div>
+            </ng-container>
+            <ng-template #showregisterform>
+                <div class="links-section">
+                    <span>Do you have an account?</span>
+                    <button (click)="changeWindow()">Log in to Tripster</button>
+                </div>
+                <div class="form-section">
+                    <form action="" class="form-2">
+                        <div class="form-box">
+                            <input type="text" placeholder="Full name">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="form-box">
+                            <input type="email" placeholder="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="form-box">
+                            <input type="password" placeholder="Password">
+                            <i class="fa-solid fa-key"></i>
+                        </div>
+                        <div class="form-box">
+                            <input type="password" placeholder="Confirm Password">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                        <div class="form-box-btn form-box-btn-2">
+                            <button>Sign up</button>
+                        </div>
+                    </form>
+                </div>
+            </ng-template>
         </div>
     </div>
 </div>
