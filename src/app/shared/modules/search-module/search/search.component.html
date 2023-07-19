@@ -42,45 +42,48 @@
         </section>
         <section class="filters-section">
             <div class="filter-box">
-                <span>Popular filters</span>
+                <span class="filter-title">Popular filters</span>
                 <span><input type="checkbox">Budget Hotel</span>
                 <span><input type="checkbox">Breakfast included</span>
                 <span><input type="checkbox">Free airport shuttle</span>
                 <span><input type="checkbox">Hostel/Backpaker</span>
             </div>
             <div class="filter-box">
-                <span>Price per night</span>
+                <span class="filter-title">Price per night</span>
                 <span><input type="checkbox">less than 50$</span>
                 <span><input type="checkbox">50$ to 100$</span>
                 <span><input type="checkbox">100$ to 150$</span>
                 <span><input type="checkbox">150$ and more</span>
             </div>
             <div class="filter-box">
-                <span>Guest rating</span>
+                <span class="filter-title">Guest rating</span>
                 <span><input type="checkbox">Any</span>
                 <span><input type="checkbox">Excellent</span>
                 <span><input type="checkbox">Very good</span>
                 <span><input type="checkbox">good</span>
             </div>
-            <div class="filter-box">
-                <span>Property class</span>
-                <span>1 <i class="fa-solid fa-star"></i></span>
-                <span>2 <i class="fa-solid fa-star"></i></span>
-                <span>3 <i class="fa-solid fa-star"></i></span>
-                <span>4 <i class="fa-solid fa-star"></i></span>
-                <span>5 <i class="fa-solid fa-star"></i></span>      
+            <div class="filter-box-stars">
+                <span class="filter-title">Property class</span>
+                <div class="filter-stars-box">
+                    <span>1 <i class="fa-solid fa-star"></i></span>
+                    <span>2 <i class="fa-solid fa-star"></i></span>
+                    <span>3 <i class="fa-solid fa-star"></i></span>
+                    <span>4 <i class="fa-solid fa-star"></i></span>
+                    <span>5 <i class="fa-solid fa-star"></i></span>      
+                </div>
             </div>
         </section>
     </aside>
     <main>
-        <span># search results for</span>
+        <span class="result-message"># search results for</span>
         <div class="search-data">
             <span>Consult information</span>
             <button>Sort by <i class="fa-solid fa-chevron-down"></i></button>
         </div>
         <div class="hotels-section">
-           <!--Crear componente para la info del hotel --> 
+           <app-hotelcard />
         </div>
     </main>
 </div>
-<app-footer></app-footer>
+<app-footer/>
+
