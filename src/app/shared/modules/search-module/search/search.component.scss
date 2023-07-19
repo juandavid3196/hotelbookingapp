@@ -1,0 +1,108 @@
+.main-container {
+    display: flex;
+    height:100vh;
+
+    aside {
+        width: 28%;
+
+        .form-section {
+            background-color: #f8f8f8;
+            border: 1.5px solid #e2e2e2;
+            border-left-width: 0;
+            padding: 25px 40px 40px 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            i {
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            span {
+                font-size: 17px;
+                font-weight: 600;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .form-box {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+
+                    label {
+                        font-size: 13px;
+                        font-weight: 500;
+                    }
+
+                    .input-box {
+                        height: 40px;
+                        width: 100%;
+                        position: relative;
+
+                        i {
+                            position: absolute;
+                            z-index: 10;
+                            top: 13px;
+                            left: 13px;
+                            font-size: 14px;
+                            color: #9f9f9f;
+                        }
+
+                        input {
+                            height: 100%;
+                            width: 100%;
+                            border-radius: 25px;
+                            border-style: none;
+                            padding-left: 35px;
+                            font-size: 13px;
+                            font-weight: 300;
+                        }
+
+                        input::placeholder {
+                            color:rgb(49, 49, 49);
+                            font-weight: 400;
+                        }
+
+                        input:focus {
+                            outline: none;
+							border: 1px solid #7fb0fd;
+							color: rgb(60, 60, 60);
+							font-weight: 500;
+                        }
+
+                        input:focus ~ i {
+							fill: #7fb0fd; 
+							color: #7fb0fd; 
+						}
+                        
+                    }
+
+                }
+
+                .btn-box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 5px;
+
+                    button {
+                        border-style: none;
+                        padding: 10px 0;
+                        width: 100%;
+                        border-radius: 25px;
+                        color: white;
+                        background-color: #1d64ec;
+                        font-weight: 500;
+                        font-size: 13px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

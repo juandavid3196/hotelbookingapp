@@ -15,11 +15,14 @@ import { LoginComponent } from '../../components/login/login.component';
     FooterComponent,
     OffercardComponent,
     LoginComponent,
-    
   ],
   imports: [
     CommonModule,
-    HomeModuleRoutingModule
+    HomeModuleRoutingModule,
+  ],
+  exports:[
+    NavComponent,
+    FooterComponent
   ]
 })
 export class HomeModuleModule { }
