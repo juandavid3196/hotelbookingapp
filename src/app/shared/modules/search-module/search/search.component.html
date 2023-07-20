@@ -43,24 +43,24 @@
         <section class="filters-section">
             <div class="filter-box">
                 <span class="filter-title">Popular filters</span>
-                <span><input type="checkbox">Budget Hotel</span>
-                <span><input type="checkbox">Breakfast included</span>
-                <span><input type="checkbox">Free airport shuttle</span>
-                <span><input type="checkbox">Hostel/Backpaker</span>
+                <app-checkfilter [text]="'Budget Hotel'"/>
+                <app-checkfilter [text]="'Breakfast included'"/>
+                <app-checkfilter [text]="'Free airport shuttle'"/>
+                <app-checkfilter [text]="'Hostel/Backpaker'"/>
             </div>
             <div class="filter-box">
                 <span class="filter-title">Price per night</span>
-                <span><input type="checkbox">less than 50$</span>
-                <span><input type="checkbox">50$ to 100$</span>
-                <span><input type="checkbox">100$ to 150$</span>
-                <span><input type="checkbox">150$ and more</span>
+                <app-checkfilter [text]="'less than 50$'"/>
+                <app-checkfilter [text]="'50$ to 100$'"/>
+                <app-checkfilter [text]="'100$ to 150$'"/>
+                <app-checkfilter [text]="'150$ and more'"/>
             </div>
             <div class="filter-box">
                 <span class="filter-title">Guest rating</span>
-                <span><input type="checkbox">Any</span>
-                <span><input type="checkbox">Excellent</span>
-                <span><input type="checkbox">Very good</span>
-                <span><input type="checkbox">good</span>
+                <app-checkfilter [text]="'Any'"/>
+                <app-checkfilter [text]="'Excellent'"/>
+                <app-checkfilter [text]="'Very good'"/>
+                <app-checkfilter [text]="'good'"/>
             </div>
             <div class="filter-box-stars">
                 <span class="filter-title">Property class</span>
