@@ -4,11 +4,13 @@ import { DetailsComponent } from './details/details.component';
 import { DetailsRoutingModule } from './details-routing.module';
 import { HomeModuleModule } from '../home-module/home-module.module';
 import { RoomcardComponent } from '../../components/roomcard/roomcard.component';
+import { ProgressbarComponent } from '../../components/progressbar/progressbar.component';
 
 @NgModule({
   declarations: [
     DetailsComponent,
-    RoomcardComponent
+    RoomcardComponent,
+    ProgressbarComponent
   ],
   imports: [
     CommonModule,
