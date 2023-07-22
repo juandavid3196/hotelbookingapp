@@ -40,7 +40,7 @@
         </div>
         <div class="properties-box">
             <div class="properties-left">
-                <span>Property Overview</span>
+                <span class="section-title">Property Overview</span>
                 <div class="list-box">
                     <div class="list-left">
                         <ul>
@@ -59,21 +59,29 @@
                 </div>         
             </div>
             <div class="properties-right">
-                <div class="box-map">
-                    map
-                </div>
+                <img src="../../../../../assets/gallery/details-page/map.png" alt="">
             </div>    
         </div>
     </section>
     <section class="rooms-section">
-        <span>Rooms</span>
-        rooms - cards
+        <span class="section-title">Rooms</span>
+        <div class="roomcard-box">
+            <app-roomcard
+                [url]="'../../../../assets/gallery/details-page/main-room.webp'"
+                [title]="'Double standard room'"
+                [extend]="'18 sqm'"
+                [people]="'2 people'"
+                [bedStyle]="'1 queen bed or two separated bed'"
+                [conditions]="'Non-refundable, Breakfast included'"
+                [price]="'180'"
+            />
+        </div>
     </section>
-    <section class="reviews">
-        <span>Reviews</span>
+    <section class="reviews-section">
+        <span class="section-title">Reviews</span>
         <div class="reviews-box">
             <div class="reviews-left">
-                <span>9.6-10</span>
+                <span>9.6/10</span>
             </div>
             <div class="reviews-right">
                 commment component

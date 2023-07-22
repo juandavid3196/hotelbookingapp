@@ -1,9 +1,15 @@
 .main-container {
-    padding: 30px 50px 40px;
+    padding: 30px 0;
     border-top: 1.5px solid #e1e1e1;
 
-    .main-section {
+    .section-title {
+        font-size: 17px;
+        font-weight: 600;
+        color: rgb(18, 18, 18);
+    }
 
+    .main-section {
+            padding: 0 50px;
         i {
             font-size: 20px;
             font-weight: bold;
@@ -16,7 +22,7 @@
             grid-gap: 15px;
 
             img {
-               border-radius: 20px;
+               border-radius: 15px;
                height: 100%;
                width: 100%; 
             }
@@ -36,7 +42,7 @@
         }
 
         .info-box {
-            margin: 40px 0;
+            margin: 30px 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -100,6 +106,106 @@
 
             }
 
+        }
+    }
+
+    .overview-section {
+        padding: 0 50px;
+        
+        .menu-box{
+            border-bottom: 1.5px solid #e1e1e1;
+            ul {
+                padding: 5px 15px;
+                display: flex;
+                list-style: none;
+                gap: 60px;
+                align-items: center;
+                color: #868686;
+
+               li{
+                    font-size: 13px;
+                }
+            }
+        }
+        .properties-box {
+            display: flex;
+            justify-content: space-between;
+            padding: 25px 0;
+            height: 200px;
+
+            .properties-left {
+                width: 33%;
+
+                .list-box {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 15px 0;
+
+                    .list-left, .list-right {
+
+                        ul {
+                            list-style: none;
+                            display:flex;
+                            flex-direction: column;
+                            gap: 15px;
+                            font-size: 13px;
+                            font-weight: 300;
+                            
+                            li{
+                                i{
+                                    font-size: 15px;
+                                    margin-right: 8px;
+                                }
+                            }
+                        }
+                    }
+                }
+            } .properties-right {
+                width: 25%;
+
+                 img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 15px;
+                 }
+            }
+        }
+    }
+
+    .rooms-section {
+        padding: 20px 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color: #f8f8f8;
+
+    }
+
+    .reviews-section {
+        padding: 30px 50px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+        .reviews-box {
+            display: flex;
+
+            .reviews-left {
+                width: 30%;
+
+                display: flex;
+                flex-direction: column;
+                gap:20px;
+
+                span {
+                    font-size: 24px;
+                    color: rgb(21, 107, 255);
+                }
+            }
+
+            .reviews-right{
+                width: 70%;
+            }
         }
     }
 }
